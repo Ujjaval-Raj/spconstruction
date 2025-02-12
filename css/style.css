@@ -1044,3 +1044,9 @@
 .text:hover{
   color: #000;
 }
+
+.contact-txt{
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  text-align: justify;
+}
