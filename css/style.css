@@ -770,6 +770,9 @@
   margin: 0 15px 10px 0px;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1006,4 +1009,38 @@
 
 .projects .portfolio-content:hover img {
   transform: scale(1.1);
+}
+
+
+
+.ftco-section {
+  padding: 7em 0;
+  position: relative; }
+
+.ftco-no-pt {
+  padding-top: 0; }
+
+.mb-5{
+  margin-top: 3rem;
+}
+
+.heading-section .category {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.text-design{
+  display: flex;
+  gap: 2rem;
+}
+
+.text{
+  color: #9C8630;
+}
+
+.text:hover{
+  color: #000;
 }
