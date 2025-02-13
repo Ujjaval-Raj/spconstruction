@@ -171,7 +171,8 @@ body{
 
 @media (max-width: 768px) {
   .hero .info {
-    padding: 0 50px;
+    /* padding: 0 50px; */
+    padding: 0 44px;
   }
 }
 
@@ -1104,4 +1105,27 @@ body{
 
 .d-flex{
   margin-bottom: 5px;
+}
+
+
+@media screen and (max-width:426px){
+    .logo-text{
+      display: none;
+    }
+    .col-md-6{
+      flex: initial;
+      max-width: none;
+    }
+    .get-started .content{
+      padding: 0px;
+    }
+    .hero .info{
+      margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:320px){
+  .hero .info{
+    padding: 0px 20px;
+  }
 }
