@@ -7,6 +7,15 @@
 body{
   overflow-x: hidden;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
 
 
 /*** Spinner ***/
@@ -797,7 +806,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: -120px;
+  margin-top: -126px;
 }
 
 .breadcrumbs:before {
