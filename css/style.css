@@ -13,6 +13,9 @@
     opacity: 1;
 }
 
+.m-1{
+  margin-top: 1;
+}
 
 
 /*** Navbar ***/
@@ -118,7 +121,7 @@
 .hero .carousel {
   width: 100%;
   min-height: 100vh;
-  margin: -120px 0px;
+  margin: -126px 0px;
   position: relative;
 }
 
@@ -315,7 +318,8 @@
     right: 0;
     bottom: 0;
     content: '';
-    background: #0033c7;
+    background: rgba(0, 0, 0, 0.6);
+    /* background: #968b5d; */
     opacity: 0;
     z-index: 1;
     -moz-transition: all 0.3s ease;
@@ -1014,7 +1018,7 @@
 
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 7em 0 0;
   position: relative; }
 
 .ftco-no-pt {
@@ -1046,7 +1050,39 @@
 }
 
 .contact-txt{
-  font-size: 2rem !important;
+  font-size: 25px !important;
   font-weight: 300 !important;
   text-align: justify;
+}
+
+.stretched-link{
+  color: #9C8630 !important;
+}
+
+.readmore:hover{
+  transition: .7s ease-in;
+  letter-spacing: 2px;
+}
+/* 
+.f-container{
+  display: flex;
+} */
+
+@media screen and (max-width:769px){
+  .f-container{
+    flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+  }
+  .d-flex{
+    justify-self: center;
+  }
+  .footer .footer-content .footer-links{
+    margin-bottom: 0px;
+  }
+}
+
+.d-flex{
+  margin-bottom: 5px;
 }
