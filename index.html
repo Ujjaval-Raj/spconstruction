@@ -572,7 +572,7 @@
                     Haware mall,sector 19 A<br /> Navi Mumbai, Thane <br> Maharashtra,400706 <br />
                     <p>
                         <strong>Phone:</strong> +91 8850232929 <br />
-                    <strong>Email:</strong> surendrapratihast121@gmail.com<br />
+                    <strong>Email:</strong> info@spconstructs.com<br />
                     </p>
                     
                   </p>
@@ -660,7 +660,7 @@
   
   <script>
     (function () {
-      emailjs.init("lbJPv9fyKPsgJfRtM"); // public key from account
+      emailjs.init("-7Edeu_kimXlmHwtN"); // public key from account
   
       var form = document.getElementById("contactform");
       var alertContainer = document.getElementById("alert-container");
@@ -668,21 +668,22 @@
       form.addEventListener("submit", function (event) {
         event.preventDefault();
   
-        emailjs
-          .sendForm("service_yqdw5rg", "template_qglgt59", this) // service id and template id
-          .then(
-            function () {
-              console.log("SUCCESS!");
-              alertContainer.innerHTML =
-                '<div class="alert alert-success">Message sent successfully!</div>';
-              form.reset();
-            },
-            function (error) {
-              console.log("FAILED...", error);
-              alertContainer.innerHTML =
-                '<div class="alert alert-danger">Failed to send message. Please try again.</div>';
-            }
-          );
+       emailjs
+  .sendForm("service_74om42k", "template_koz3dcs", form)
+  .then(
+    function (response) {
+      console.log("SUCCESS!", response);
+      alertContainer.innerHTML =
+        '<div class="alert alert-success">Message sent successfully!</div>';
+      form.reset();
+    },
+    function (error) {
+      console.error("FAILED...", error);
+      alertContainer.innerHTML =
+        `<div class="alert alert-danger">Failed to send message. Error: ${error.text}</div>`;
+    }
+  );
+
       });
     })();
   </script>
